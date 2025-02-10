@@ -1,92 +1,106 @@
-body, html {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: white;
-    background-color: white ;
-    height: 100%;
+body,
+html {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: #bd5343;
+  height: 100%;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: red;
-    padding: 10px 0;
-    transition: padding 0.3s ease;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: red;
+  padding: 10px 0;
+  transition: padding 0.3s ease;
+  width: 100%;
 }
 
 .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1200px;
 }
 
 .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 nav a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 0;
-    line-height: 1;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 0;
+  line-height: 1;
 }
 
 nav a:hover {
-    color: crimson;
+  color: crimson;
 }
 
 .order-button {
-    background-color: transparent;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    border: 2px solid white;
-    transition: background-color 0.3s, color 0.3s;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: 2px solid white;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .order-button:hover {
-    border: 2px solid ivory;
-    background-color: crimson;
-    color: white;
+  border: 2px solid ivory;
+  background-color: crimson;
+  color: white;
 }
-
 .carousel {
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    background-color: black;
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(17, 20, 203, 0.5);
+  background-color: rgb(63, 17, 202);
 }
 
 .carousel-inner {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 .slides {
-    display: none;
-    background-color: transparent;
+  display: none;
+  background-color: transparent;
 }
 
 .slides img {
-    width: 100%;
-    height: 870px;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 870px;
+  object-fit: cover;
+  display: block;
 }
 
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 2px solid crimson;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 2;}
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -97,63 +111,166 @@ nav a:hover {
     background-color: none;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    border: 2px solid crimson;
+    border: 2px solid #bd5343;
     transition: background-color 0.3s, transform 0.3s;
     z-index: 2;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
 
+.prev:hover,
+.next:hover {
+  background-color: crimson;
+  transform: translateY(-50%) scale(1.1);
+}
 .prev:hover, .next:hover {
-    background-color: crimson;
+    background-color: #bd5343;
     transform: translateY(-50%) scale(1.1);
 }
 
 .caption {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
-    max-width: 80%;
-    backdrop-filter: blur(5px);
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+  max-width: 80%;
+  backdrop-filter: blur(5px);
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 20px;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .footer-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .restaurant-info {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-credit {
-    font-size: 0.9rem;
-    color: #aaa;
+  font-size: 0.9rem;
+  color: #aaa;
 }
 
 .footer-credit strong {
-    color: white;
+  color: white;
 }
 
-.card-personal{
-    width: 18rem; background-color: lightgray;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); rgb(175, 175, 175);
+.card-personal {
+  width: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  height: 400px; /* Para que todas las tarjetas tengan la misma altura */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; /* Evita que la imagen sobresalga */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3%;
+  padding-top: 2%;
+}
+
+.second-nav {
+  top: 60px; /* Lo coloca debajo del primer nav */
+  z-index: 1030;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+}
+
+.text-container {
+    max-height: 50px; /* Altura inicial del texto */
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.toggle-text:checked + .text-container {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.toggle-text {
+    display: none;
+}
+
+.label-toggle {
+    color: blue;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5px;
+    display: none; /* Oculto por defecto */
+}
+
+.label-toggle::after {
+    content: "Leer más";
+}
+
+.toggle-text:checked + .text-container + .label-toggle::after {
+    content: "Leer menos";
+}
+
+.price {
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+}
+.desc-button {
+    background-color: transparent;
+    color: #bd5343;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #bd5343;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.caption a {
+    text-decoration: none;
+}
+.desc-button:hover {
+    border: 2px solid #bd5343;
+    background-color: #bd5343;
+    color: white;
 }

@@ -9,23 +9,25 @@
     <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <nav>
-        <div class="menu">
+    <nav >
+        <div class="menu ">
             <h1>TIERRA ROJA FUSION</h1>
             <div class="nav-links">
                 <a href="">INICIO</a>
                 <a href="">SOBRE NOSOTROS</a>
                 <a href="">MENU</a>
                 <a href="">CONTACTO</a>
-                <a href="">GALERIA</a>
-                <a href="" class="order-button">ORDENA AHORA!</a>
+                <a href="galery.html">GALERIA</a>
+                <a href="" class="order-button" style="background-color: crimson;">ORDENA AHORA!</a>
             </div>
         </div>
+
+    
     </nav>
 
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top second-nav">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Menu</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,14 +51,82 @@
 <!--Fin de navbar-->
 <br>
 <!-- Mostrar platillos-->
+ <div class="container" >
+
+
     <div class="card card-personal">
         <img src="imgs/arroz_chaufa.jpg" class="card-img-top" alt="arroz_chaufa">
         <div class="card-body">
-          <p class="card-text">una mezcla de arroz frito acompañada de verduras, tortilla de huevo y carnes al gusto</p>
-          <h6>$12.990</h6>
+            <input type="checkbox" id="toggle1" class="toggle-text">
+            <div class="text-container">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente commodi maxime similique iure consectetur odit consequatur neque quia. Veniam placeat vero eaque distinctio. Sequi libero sed ipsa omnis molestias.
+                </p>
+            </div>
+            <label for="toggle1" class="label-toggle"></label>
+            <h6 class="price">$12.990</h6>
         </div>
-      </div>
-    <div class="informacion"></div>
+    </div>
+    
+    <div class="card card-personal">
+        <img src="imgs/carne_mongoliana.jpg" class="card-img-top" alt="carne_mongoliana">
+        <div class="card-body">
+            <input type="checkbox" id="toggle2" class="toggle-text">
+            <div class="text-container">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+            <label for="toggle2" class="label-toggle"></label>
+            <h6 class="price">$12.990</h6>
+        </div>
+    </div>
+    
+    <div class="card card-personal">
+        <img src="imgs/ceviche.jpeg" class="card-img-top" alt="ceviche">
+        <div class="card-body">
+            <input type="checkbox" id="toggle3" class="toggle-text">
+            <div class="text-container">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente commodi maxime similique iure consectetur odit consequatur.
+                </p>
+            </div>
+            <label for="toggle3" class="label-toggle"></label>
+            <h6 class="price">$12.990</h6>
+        </div>
+    </div>
+    
+    <div class="card card-personal">
+        <img src="imgs/lomo_salteado.jpeg" class="card-img-top" alt="lomo_salteado">
+        <div class="card-body">
+            <input type="checkbox" id="toggle4" class="toggle-text">
+            <div class="text-container">
+                <p class="card-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio sapiente commodi maxime similique iure consectetur odit consequatur neque quia. Veniam placeat vero eaque distinctio. Sequi libero sed ipsa omnis molestias.
+                </p>
+            </div>
+            <label for="toggle4" class="label-toggle"></label>
+            <h6 class="price">$12.990</h6>
+        </div>
+    </div>
+    
+    <div class="card card-personal">
+        <img src="imgs/wantan.jpg" class="card-img-top" alt="wantan">
+        <div class="card-body">
+            <input type="checkbox" id="toggle5" class="toggle-text">
+            <div class="text-container">
+                <p class="card-text">
+                    lorem
+                </p>
+            </div>
+            <label for="toggle5" class="label-toggle"></label>
+            <h6 class="price">$12.990</h6>
+        </div>
+    </div>
+    
+    
+ </div>
+   
 
 <!-- Fin mostrar platillos-->
 
