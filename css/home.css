@@ -3,7 +3,7 @@ body, html {
     margin: 0;
     padding: 0;
     color: white;
-    background-color: red;
+    background-color: white ;
     height: 100%;
 }
 
@@ -152,4 +152,8 @@ footer {
 
 .footer-credit strong {
     color: white;
+}
+
+.card-personal{
+    width: 18rem; background-color: lightgray;  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); rgb(175, 175, 175);
 }
