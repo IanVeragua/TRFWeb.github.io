@@ -22,3 +22,15 @@ function showSlide(index) {
 setInterval(() => {
     changeSlide(1);
 }, 3000);
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".card-body").forEach(card => {
+        let textContainer = card.querySelector(".text-container");
+        let toggleLabel = card.querySelector(".label-toggle");
+
+        // Verifica si el contenido supera el alto inicial
+        if (textContainer.scrollHeight > textContainer.clientHeight) {
+            toggleLabel.style.display = "block"; // Muestra "Leer más"
+        }
+    });
+});
