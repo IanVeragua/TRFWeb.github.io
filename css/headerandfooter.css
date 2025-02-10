@@ -1,0 +1,85 @@
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #bd5343;
+    padding: 10px 0;
+    transition: padding 0.3s ease;
+    width: 100%;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 0;
+    line-height: 1;
+}
+
+nav a:hover {
+    color: #974235;
+}
+
+.order-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.order-button:hover {
+    border: 2px solid ivory;
+    background-color: #bd5343;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.restaurant-info {
+    margin-bottom: 10px;
+}
+
+.footer-credit {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.footer-credit strong {
+    color: white;
+}
+
+::-webkit-scrollbar {
+    display: none; /* Oculta la barra de scroll */
+}
+
+html {
+    overflow-y: hidden;
+}
+
+body {
+    overflow: scroll;
+}

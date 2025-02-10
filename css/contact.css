@@ -1,0 +1,156 @@
+/* General */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 100%;
+    overflow-x: hidden; /* Evitar el scroll horizontal */
+    background-color: #bd5343; /* Color base */
+}
+
+/* Fondo de la página */
+body {
+    background-image: url('../imgs/photo1.webp'); /* Imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed; /* Fija la imagen al fondo */
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #bd5343;
+    padding: 10px 0;
+    transition: padding 0.3s ease;
+    width: 100%;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Estilos de los enlaces */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 0;
+    line-height: 1;
+}
+
+nav a:hover {
+    color: #974235;
+}
+
+/* Botón de orden */
+.order-button {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.order-button:hover {
+    background-color: white;
+    color: #bd5343;
+}
+
+/* Sección de Contacto */
+.contacto {
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Título de la sección de contacto */
+.contacto h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Sección del formulario de contacto */
+.contact-form {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Etiquetas de los campos */
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Campos de entrada */
+.contact-form input, .contact-form textarea {
+    width: calc(100% - 20px); /* Asegura que no se peguen al borde */
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    color: black;
+    display: block;
+}
+
+/* Estilo del botón */
+.contact-form button {
+    background-color: #bd5343;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d32f2f;
+}
+
+/* Sección de Información de contacto */
+.contact-info {
+    margin-top: 40px;
+    font-size: 1.1rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+/* Título de la información de contacto */
+.contact-info h3 {
+    margin-bottom: 20px;
+}
+
+/* Estilo de los textos en la información de contacto */
+.contact-info p {
+    margin-bottom: 10px;
+}
