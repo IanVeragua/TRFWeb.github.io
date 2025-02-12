@@ -8,45 +8,6 @@ html {
   height: 100%;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: red;
-  padding: 10px 0;
-  transition: padding 0.3s ease;
-  width: 100%;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-  max-width: 1200px;
-}
-
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-nav a {
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 10px 0;
-  line-height: 1;
-}
-
-nav a:hover {
-  color: crimson;
-}
-
 .order-button {
   background-color: transparent;
   color: white;
