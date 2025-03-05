@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tierra Roja Fusion | Comida china y peruana!</title>
-    <link rel="stylesheet" href="css/headerandfooter.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="assets/css/headerandfooter.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 <body>
     <nav>
@@ -24,7 +24,7 @@
 
     <div class="carousel">
         <div class="slides fade">
-            <img src="imgs/photo1.webp" alt="Platillo 1">
+            <img src="assets/imgs/photo1.webp" alt="Platillo 1">
             <div class="caption">
                 <h1>EJEMPLO 1</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid vitae, laboriosam modi nobis accusamus unde quos eaque nesciunt dicta ratione in dolore consequuntur, ex dignissimos at molestiae excepturi quas fuga.</p>
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="slides fade">
-            <img src="imgs/photo2.webp" alt="Platillo 2">
+            <img src="assets/imgs/photo2.webp" alt="Platillo 2">
             <div class="caption">
                 <h1>EJEMPLO 2</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente voluptas dignissimos eligendi, quas sequi repellat quisquam veniam odio ad maxime porro a vitae rem vero magni? Dicta nihil consequuntur vero?</p>
@@ -43,23 +43,40 @@
         <a class="next" onclick="changeSlide(1)"></a>
     </div>
 
-    <div class="informacion"></div>
-
-    <footer>
-        <div class="footer-content">
-            <div class="restaurant-info">
-                <h3>Tierra Roja Fusion</h3>
-                <p>Dirección: Av. Ejemplo, Santiago, Chile.</p>
-                <p>Teléfono: +56 9 8765 4321</p>
-                <p>Email: contacto@tierraroja.com</p>
-                <p>Horario de atención: Lunes a Domingo, 12:00 PM - 11:00 PM</p>
+    <div class="informacion">
+        <section class="inf1">
+            <div class="text-content">
+                <h1>TITULO 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veniam excepturi, itaque dolores harum accusamus. Culpa quae unde labore optio perspiciatis obcaecati. Eius quidem sequi dicta, ab autem magnam placeat.</p>
             </div>
-            <div class="footer-credit">
-                <p>Diseñado por <strong>Hollowed Studios</strong></p>
+            <img src="assets/imgs//ceviche.jpeg" alt="Ceviche">
+        </section>
+        <section class="inf2">
+            <div class="text-content">
+                <h1>TITULO 2</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veniam excepturi, itaque dolores harum accusamus. Culpa quae unde labore optio perspiciatis obcaecati. Eius quidem sequi dicta, ab autem magnam placeat.</p>
             </div>
-        </div>
-    </footer>
-
-    <script src="js/script.js"></script>
+            <img src="assets/imgs//arroz_chaufa.jpg" alt="Arroz Chaufa">
+        </section>
+        <section class="inf3">
+            <div class="text-content">
+                <h1>TITULO 3</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti veniam excepturi, itaque dolores harum accusamus. Culpa quae unde labore optio perspiciatis obcaecati. Eius quidem sequi dicta, ab autem magnam placeat.</p>
+            </div>
+            <img src="assets/imgs//carne_mongoliana.jpg" alt="Arroz Chaufa">
+        </section>
+    </div>
+    <div id="footer"></div>
+    <script src="assets/js/script.js"></script>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "footer.html", true);
+        xhr.onload = function() {
+          if (xhr.status === 200) {
+            document.getElementById("footer").innerHTML = xhr.responseText;
+          }
+        };
+        xhr.send();
+      </script>
 </body>
 </html>

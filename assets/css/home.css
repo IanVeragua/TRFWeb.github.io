@@ -8,6 +8,7 @@ html {
   height: 100%;
 }
 
+<<<<<<< HEAD:css/home.css
 nav {
   display: flex;
   justify-content: center;
@@ -48,6 +49,8 @@ nav a:hover {
   color: crimson;
 }
 
+=======
+>>>>>>> 48a9e5138bed33e7bc8a47a54a8d9101dd7712b5:assets/css/home.css
 .order-button {
   background-color: transparent;
   color: white;

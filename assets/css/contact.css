@@ -5,30 +5,14 @@ body, html {
     padding: 0;
     color: white;
     height: 100%;
-    overflow-x: hidden; /* Evitar el scroll horizontal */
-    background-color: #bd5343; /* Color base */
-}
-
-/* Fondo de la página */
-body {
-    background-image: url('../imgs/photo1.webp'); /* Imagen de fondo */
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-    background-position: center center; /* Centra la imagen */
-    background-attachment: fixed; /* Fija la imagen al fondo */
-}
-
-/* Navbar */
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
     background-color: #bd5343;
-    padding: 10px 0;
-    transition: padding 0.3s ease;
-    width: 100%;
+}
+
+body {
+    background-image: url('../imgs/photo1.webp');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 /* Menu */
@@ -40,24 +24,6 @@ nav {
     max-width: 1200px;
 }
 
-/* Estilos de los enlaces */
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-nav a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 10px 0;
-    line-height: 1;
-}
-
-nav a:hover {
-    color: #974235;
-}
 
 /* Botón de orden */
 .order-button {
